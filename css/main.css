@@ -1,0 +1,140 @@
+body {
+   background: url("https://static.vecteezy.com/system/resources/previews/004/684/541/original/dusty-pink-scratched-lines-primitive-hand-drawn-seamless-pattern-doodle-endless-pattern-for-textile-wrapping-digital-paper-template-vector.jpg");
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   top: 0;
+   left: 0;
+   color: black;
+}
+.main {
+   padding-top: 20px;
+}
+.content {
+   margin-top: 10px;
+   padding: 15px;
+   display: flex;
+   box-shadow: 0px 0px 5px rgb(110, 160, 36);
+   background: rgb(223, 180, 180, 0.5);
+   border-radius: 6px;
+}
+.content:hover {
+   box-shadow: 0px 0px 7px rgb(110, 160, 36);
+   transition: all 0.5s ease;
+   background: rgb(223, 180, 180, 0.7);
+}
+.slide:hover {
+   border-radius: 6px;
+   box-shadow: 0px 0px 5px #000;
+   border: 1px solid green inset;
+   transition: all 1s ease;
+}
+.denpasar.slide {
+   background: url("https://img3.goodfon.com/wallpaper/nbig/4/b6/more-skaly-arka-bali-indoneziya.jpg") no-repeat
+      center/cover;
+}
+.tokyo.slide {
+   background: url("https://cutewallpaper.org/21/tokyo-street-wallpaper-hd/Flight-Deal-of-the-Day-U.S.-to-Tokyo-for-440-Conde-Nast-.jpg")
+      no-repeat center/cover;
+}
+.amsterdam.slide {
+   background: url("https://wallpaperaccess.com/full/1088031.jpg") no-repeat center/cover;
+}
+.moscow.slide {
+   background: url("https://urixblog.com/p/2021/2021.01.02/2021.01.02_13-07-10.jpg") no-repeat center/cover;
+}
+.madrid.slide {
+   background: url("https://img5.goodfon.com/wallpaper/nbig/0/87/madrid-spain-europe-evropa-ispaniia-madrid-gorod-vecher-vid.jpg")
+      no-repeat center/cover;
+}
+.london.slide {
+   background: url("https://i.ytimg.com/vi/rU5lQBKe49s/maxresdefault.jpg") no-repeat center/cover;
+}
+.slide {
+   height: 8vh;
+   overflow: hidden;
+   border-radius: 6px;
+   box-shadow: 0px 0px 5px #000;
+   border: 1px solid green inset;
+   cursor: pointer;
+   margin-top: -5px;
+   transition: all 1s ease;
+   text-align: center;
+}
+.slide div.content {
+   display: none;
+   transition: all 1s ease;
+}
+.slide.active {
+   height: 60vh;
+   overflow: hidden;
+}
+.slide.active div.content {
+   display: flex;
+}
+.slide h2 {
+   margin-top: 15px;
+   font-weight: 500;
+   font-size: 20px;
+}
+.slide.active h2 {
+   display: none;
+}
+.btn {
+   width: 120px;
+}
+.title {
+   font-weight: 500;
+   font-size: 20px;
+}
+.temp {
+   font-weight: 700;
+   font-size: 50px;
+}
+.sky-condition {
+   font-weight: 500;
+}
+.wind-text {
+   margin: 0;
+   font-weight: 500;
+}
+.wind {
+   font-weight: 500;
+}
+
+/* Responsive */
+
+@media (max-width: 1499.98px) {
+}
+
+/* X-Large devices (desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+   .content {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 500px;
+      width: 150px;
+   }
+   .slide.active {
+      justify-content: center;
+      display: flex;
+   }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
